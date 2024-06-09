@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Registration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        background-color: transparent;
+        transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus {
+        border-bottom-color: #007bff;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .otp-verification-form {
+        display: none;
+        border-top: 2px solid #ddd;
+        padding-top: 20px;
+    }
+
+    .otp-verification-form label {
+        margin-top: 20px;
+    }
+
+    .otp-verification-form input[type="number"] {
+        width: calc(100% - 20px);
+    }
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .back-to-registration {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Account Registration</h2>
+    <form id="registration-form" method="POST">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+
+        <input type="password" id="pincode" name="pincode" placeholder="PIN Code" required>
+
+        <input type="password" id="confirm_pincode" name="confirm_pincode" placeholder="Confirm PIN Code" required>
+        <input type="text" id="bal" name="bal" placeholder="First Payment" required>
+
+        <input type="email" id="email" name="email" placeholder="Email ID:" required>
+        <p id="msg">demo</p>
+        <input type="submit" onclick="cal()">
+        <script>
+            var messageFromPython = "{{ message }}";
+            alert(messageFromPython);
+        </script>
+        <!-- window.location = "/";   going next page on click and submit -->
+       
+
+</div>
+    
+</script>
+</body>
+</html>
+
+

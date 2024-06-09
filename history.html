@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollbars Example</title>
+<h1 align="center">HISTORY </h1>
+<style>
+  .container {
+    width: 700px; /* Set container width */
+    height: 500px; /* Set container height */
+    overflow-x: auto; /* Enable horizontal scrollbar */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    border: 1px solid #ccc; /* Add border for visualization */
+    padding: 10px; /* Add padding for content */
+  }
+</style>
+<style>
+    table {
+      border-collapse: collapse; /* Collapse table borders */
+      width: 100%; /* Set table width to fill its container */
+    }
+    th, td {
+      border: 1px solid #000; /* Add dark black border for cells */
+      padding: 8px; /* Add padding for cell content */
+      text-align: left; /* Align text to the left */
+    }
+    th {
+      background-color: #f2f2f2; /* Add background color for header cells */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Add content inside the container -->
+  <div style="width: 1000px; height: 1000px;">
+    <!-- Content to exceed container size and cause scrollbars -->
+    
+    <table>
+        <thead>
+          <tr>
+            <th>S_NO</th> <!-- Header for row numbers -->
+            <th>ID</th>
+            <th>Transection type</th>
+            <th>TIME & DATE</th>
+            <th>AMOUNT</th>
+            <th>TOTAL BALANCE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Auto-incrementing rows -->
+          <!-- You can add more rows by duplicating this <tr> block -->
+          <tr>
+            <td>1</td> <!-- Row number auto-incremented -->
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+            <td>Row 1, Column 4</td>
+            <td>Row 1, Column 5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+            <td>Row 2, Column 4</td>
+            <td>Row 2, Column 5</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+  </div>
+</div>
+
+</body>
+</html>
